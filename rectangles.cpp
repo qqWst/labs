@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cmath>
+#include <locale.h>
 using namespace std;
 
 void calRectangle(double length, double width) {
@@ -20,6 +21,7 @@ void calRectangle(double length, double width) {
 }
 
 int main() {
+    setlocale(LC_ALL, "Rus");
     double a, b;
 
     cout << "¬ведите длину пр€моугольника: ";
