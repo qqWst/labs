@@ -13,7 +13,9 @@ void main(){
             int sides[3];
             cout << "Enter sides (3):";
             for (int i = 0; i < 3; i++) cin >> sides[i];
-            int perimeter, isIsosceles;
+            int perimeter;
+            bool isIsosceles;
+            cout << fixed;
             double area;
             triangle(sides[0], sides[1], sides[2], perimeter, area, isIsosceles);
             cout << "Perimeter = " << perimeter << endl <<
