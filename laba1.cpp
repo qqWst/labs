@@ -1,5 +1,6 @@
 #include <iostream>
 #include "triangle.cpp"
+#include "rectangle.cpp"
 
 using namespace std;
 
@@ -9,6 +10,15 @@ void main(){
     cout << "1. Rectangle\n2. Triangle\nEnter your choice: ";
     cin >> choice;
     switch(choice){
+        case 1:{
+            double a, b;
+            cout << "Enter length: ";
+            cin >> a;
+            cout << "Enter width: ";
+            cin >> b;
+            calRectangle(a, b);
+            break;
+        }
         case 2:{ 
             int sides[3];
             cout << "Enter sides (3):";
